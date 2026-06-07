@@ -1,12 +1,12 @@
 class AgentHelper < Formula
   desc "Terminal UI for browsing Claude Code JSONL transcripts"
   homepage "https://github.com/hanai/agent-helper"
-  version "1.0.1-snapshot.16"
+  version "1.0.1-snapshot.17"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/hanai/agent-helper-releases/releases/download/v1.0.1-snapshot.16/agent-helper-macos-arm64.tar.gz"
-      sha256 "46e796b7fc42480c18765541a67f0e741ab2f43c17fd1b97390b6a730e04deee"
+      url "https://github.com/hanai/agent-helper-releases/releases/download/v1.0.1-snapshot.17/agent-helper-macos-arm64.tar.gz"
+      sha256 "fa758e890f9c30d4b08e714f794acb987e218489573cccaba2212ac4104db411"
     else
       odie "agent-helper does not support macOS Intel"
     end
@@ -14,8 +14,8 @@ class AgentHelper < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/hanai/agent-helper-releases/releases/download/v1.0.1-snapshot.16/agent-helper-linux-amd64.tar.gz"
-      sha256 "ff76149db89e6e48c467b8a52a9257f0fc6f7fa3f19a7ba733287adc40d0f149"
+      url "https://github.com/hanai/agent-helper-releases/releases/download/v1.0.1-snapshot.17/agent-helper-linux-amd64.tar.gz"
+      sha256 "df502b15be1b0a0d522c6ce9d4ea967eb9f95eab07635202f40e98ef7a2e1281"
     else
       odie "agent-helper does not support Linux ARM"
     end
